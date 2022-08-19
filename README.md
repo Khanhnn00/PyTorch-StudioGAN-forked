@@ -108,15 +108,21 @@ We check the reproducibility of GANs implemented in StudioGAN  by comparing IS a
 </p>
 
 # Requirements
+We will use python 3.9 along with below specifications.
 
 First, install PyTorch meeting your environment (at least 1.7, recommmended 1.10):
 ```bash
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+pip3 install torch==1.10.* torchvision --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 
 Then, use the following command to install the rest of the libraries:
 ```bash
 pip3 install tqdm ninja h5py kornia matplotlib pandas sklearn scipy seaborn wandb PyYaml click requests pyspng imageio-ffmpeg timm
+```
+
+[Optional] Install these addition libraries for code formatting and linting:
+```bash
+pip3 install flake8 isort black
 ```
 
 With docker, you can use (Updated 19/JUL/2022):
